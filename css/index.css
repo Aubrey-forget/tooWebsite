@@ -26,13 +26,18 @@ a {
   position: absolute;
   width: 175px;
   height: 46px;
-  background-color: #ffffff;
   text-align: center;
   line-height: 46px;
   font-size: 20px;
-  color: #222222;
+  color: #fff;
   left: 19%;
   bottom: 12%;
+  border: 1px solid #fff;
+}
+
+.too-header>a>div:hover {
+  color: #DC6767;
+  border:1px solid #DC6767;
 }
 
 .too-industry>header,
@@ -80,17 +85,20 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 13px;
 }
 
 .too-industry>.industry>.too-figure {
-  text-align: center;
   margin-right: 45px;
-  margin-top: 49px;
+  margin-top: 56px;
   cursor: pointer;
+  width: 370px;
+  height: 170px;
+  padding: 20px 38px 0;
+  box-shadow: 0px 0px 20px 0px rgba(118, 126, 134, 0.2);
 }
 
-.too-industry>.industry>.too-figure:hover figcaption {
+.too-industry>.industry>.too-figure:hover {
+  margin-top: 39px;
   box-shadow: 0px 15px 20px 0px rgba(118, 126, 134, 0.2);
 }
 
@@ -99,23 +107,16 @@ a {
 }
 
 .too-industry>.industry>.too-figure>div {
-  width: 128px;
-  height: 128px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   display: inline-block;
+  margin-bottom: 25px;
 }
 
 .too-industry>.industry>.too-figure>div>img {
   width: 100%;
   height: 100%;
-}
-
-.too-industry>.industry>.too-figure>figcaption {
-  padding: 44px 38px;
-  margin-top: -25px;
-  width: 370px;
-  height: 130px;
-  box-shadow: 0px 0px 20px 0px rgba(118, 126, 134, 0.2);
 }
 
 .superiority,
@@ -126,7 +127,7 @@ a {
   background-color: #f7f8fa;
   padding-top: 79px;
   padding-bottom: 130px;
-  margin-top: 80px;
+  margin-top: 130px;
 }
 
 .superiority>header,
@@ -158,6 +159,7 @@ a {
 
 .superiority-row .superiority-item:hover {
   box-shadow: 0px 10px 20px 0px rgba(118, 126, 134, 0.2);
+  margin-top: 20px;
 }
 
 .superiority-item>div {
@@ -382,7 +384,7 @@ a {
 
 .operation-item>div {
   width: 260px;
-  height: 184px;
+  height: 143px;
   margin-bottom: 47px;
 }
 
@@ -413,7 +415,7 @@ a {
 .table-item {
   text-align: center;
   padding: 20px 39px 10px;
-  border: 1px solid #fff;
+  border: 1px solid rgba(220,220,220,0.4);
 }
 
 .table-item:nth-of-type(n + 1) {

@@ -38,59 +38,72 @@
 
     <!-- 行业痛点 -->
     <section class="too-industry">
-      <header>
+      <header style="margin-bottom:14px">
         <h3>行业痛点</h3>
         <p>痛定思痛，着力解决</p>
       </header>
 
       <section class="industry">
+
         <figure class="too-figure">
-          <div><img src="./img/aims.png"
-                 alt=""></div>
+          <div>
+            <img src="./img/industry/1.png"
+                 alt="">
+          </div>
           <figcaption>
             传统的线下流量往往不可被记录，难以进行统计
           </figcaption>
         </figure>
 
         <figure class="too-figure">
-          <div><img src="./img/aims.png"
-                 alt=""></div>
+          <div>
+            <img src="./img/industry/2.png"
+                 alt="">
+          </div>
           <figcaption>
             线下商铺与客户的链接随着客户离店而断开，不能做持续维护
           </figcaption>
         </figure>
 
         <figure class="too-figure">
-          <div><img src="./img/aims.png"
-                 alt=""></div>
+          <div>
+            <img src="./img/industry/3.png"
+                 alt="">
+          </div>
+          <figcaption>
+            竞价模式下高额的流量获客成本，使得利润越来越薄
+          </figcaption>
+        </figure>
+
+      </section>
+      <section class="industry">
+        <figure class="too-figure">
+          <div>
+            <img src="./img/industry/4.png"
+                 alt="">
+          </div>
           <figcaption>
             日渐增长的平台服务费及抽成，使得成本逐年增高
           </figcaption>
         </figure>
-      </section>
 
-      <section class="industry">
         <figure class="too-figure">
-          <div><img src="./img/aims.png"
-                 alt=""></div>
+          <div>
+            <img src="./img/industry/5.png"
+                 alt="">
+          </div>
           <figcaption>
             营销手段受平台限制极大，缺乏自主性
           </figcaption>
         </figure>
 
         <figure class="too-figure">
-          <div><img src="./img/aims.png"
-                 alt=""></div>
+          <div>
+            <img src="./img/industry/6.png"
+                 alt="">
+          </div>
           <figcaption>
             使用外卖平台的顾客，通常很容易因为价格而被其他同类店铺信息吸引走，客户忠诚度不高
-          </figcaption>
-        </figure>
-
-        <figure class="too-figure">
-          <div><img src="./img/aims.png"
-                 alt=""></div>
-          <figcaption>
-            传统的线下流量往往不可被记录，难以进行统计
           </figcaption>
         </figure>
       </section>
@@ -173,14 +186,6 @@
           </figcaption>
         </figure>
       </div>
-
-
-
-
-
-
-
-
     </section>
 
     <!-- 功能模块 -->
@@ -492,8 +497,6 @@
       </header>
       <div id="moreList"
            class="table">
-
-
       </div>
       <a href="https://market.cloud.tencent.com/stores/1253714409"
          target="_blank">
@@ -614,6 +617,7 @@
   </section>
 
 </body>
+<!-- 我们有的不止这些 -->
 <script id="moreList-box"
         type="text/html">
   {{each moreList}}
@@ -626,6 +630,7 @@
 </figure>
 {{/each}}
 </script>
+
 <script>
   $(() => {
     new ZoomPic("swiper");
@@ -644,7 +649,7 @@
   });
 
   // 我们有的不止这些
-  let more = {
+  const more = {
     moreList: [{
         figure: './img/viewMore/KTV.png',
         name: 'KTV',
@@ -703,9 +708,8 @@
 
     ]
   }
-  var html = template.render($('#moreList-box').html(), more);
+  const html = template.render($('#moreList-box').html(), more);
   $('#moreList').html(html);
-
 </script>
 
 </html>
