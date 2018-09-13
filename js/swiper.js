@@ -22,8 +22,8 @@ ZoomPic.prototype = {
     if (isMobile.phone) {
       console.log('手机');
       this.options = [
-        { width: 111, height: 197, top: 104, left: 5, zIndex: 1 },
-        { width: 111, height: 197, top: 104, left: 5, zIndex: 2 },
+        { width: 111, height: 197, top: 104, left: 0, zIndex: 1 },
+        { width: 111, height: 197, top: 104, left: 0, zIndex: 2 },
         { width: 132, height: 237, top: 84, left: 40, zIndex: 3 },
         { width: 151, height: 269, top: 26, left: 100, zIndex: 4 },
         { width: 132, height: 237, top: 84, left: 200, zIndex: 3 },
