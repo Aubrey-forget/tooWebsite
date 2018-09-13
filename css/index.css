@@ -646,7 +646,20 @@ a {
   height: 780px;
 }
 
-#mt-swiper li {
+#mt-phone-swiper {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+#mt-phone-swiper ul {
+  position: relative;
+  height: 420px;
+  width: 720px;
+}
+
+#mt-swiper li,
+#mt-phone-swiper li {
   position: absolute;
   width: 0;
   height: 0;
@@ -658,19 +671,21 @@ a {
   box-shadow: 0px 15px 20px 0px rgba(118, 126, 134, 0.2);
 }
 
-#mt-swiper li > img {
+#mt-swiper li > img,
+#mt-phone-swiper li >img {
   width: 100%;
   height: 100%;
   vertical-align: top;
   float: left;
 }
 
-#mt-swiper .mt-prev,
-#mt-swiper .mt-next {
+.mt-prev,
+.mt-next {
   display: none;
 }
 
-.mt-swiper-list li > div {
+.mt-swiper-list li > div,
+.mt-phone-swiper-list li >div{
   position: absolute;
   top: 0;
   left: 0;
@@ -687,6 +702,12 @@ a {
   margin-bottom: 30%;
 }
 
+.mt-phone-swiper-list li > div img {
+  width: 75px;
+  margin-top: 30%;
+  margin-bottom: 30%;
+}
+
 .mt-swiper-list li:nth-of-type(4) {
   width: 344px !important;
   height: 710px !important;
@@ -698,12 +719,32 @@ a {
   border-radius: 52px;
 }
 
+.mt-phone-swiper-list li:nth-of-type(4) {
+  width: 172px !important;
+  height: 355px !important;
+  background: url("../img/case/iPhoneFront.png") no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 42px;
+  padding-left: 10px;
+  border-radius: 26px;
+}
+
+
+
 .mt-swiper-list li:nth-of-type(4) > img {
   width: 303px !important;
   height: 539px !important;
 }
 
-.mt-swiper-list li:hover > div {
+.mt-phone-swiper-list li:nth-of-type(4) > img {
+  width: 151px !important;
+  height: 269px !important;
+}
+
+
+.mt-swiper-list li:hover > div,
+.mt-phone-swiper-list li:hover>div {
   display: block;
   width: 100%;
   height: 100%;
@@ -716,6 +757,13 @@ a {
   left: 21px;
 }
 
+.mt-phone-swiper-list li:nth-of-type(4):hover > div {
+  width: 151px !important;
+  height: 269px !important;
+  top: 42px;
+  left: 10px;
+}
+
 .mt-swiper-bth {
   width: 150px;
   height: 50px;
@@ -725,6 +773,17 @@ a {
   background: rgba(232, 70, 68, 0.85);
   /* border: 1px solid #e84644; */
   display: inline-block;
+}
+
+.mt-phone-swiper-list .mt-swiper-bth {
+  width: 75px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: rgba(232, 70, 68, 0.85);
+  display: inline-block;
+  font-size: 10px;
 }
 
 /* 手机端样式 */
@@ -751,7 +810,10 @@ a {
 .mt-goods > header,
 .mt-distribution>header,
 .mt-superior>header,
-.mt-we-more>header {
+.mt-we-more>header,
+.mt-also>header,
+.mt-regarding>header,
+.mt-phone-case>header {
   text-align: center;
   padding: 0 10px;
 }
@@ -762,7 +824,10 @@ a {
 .mt-goods > header > h3,
 .mt-distribution>header>h3,
 .mt-superior>header>h3,
-.mt-we-more>header>h3 {
+.mt-we-more>header>h3,
+.mt-also>header>h3,
+.mt-regarding>header>h3,
+.mt-phone-case>header>h3 {
   font-size: 16px;
   margin-bottom: 11px;
   color: #171717;
@@ -774,7 +839,9 @@ a {
 .mt-goods > header > p,
 .mt-distribution>header>p,
 .mt-superior>header>p,
-.mt-we-more>header>p {
+.mt-we-more>header>p,
+.mt-regarding>header>p,
+.mt-phone-case>header>p {
   font-size: 9px;
   margin-bottom: 7px;
 }
@@ -815,7 +882,8 @@ a {
 .mt-phone-odds,
 .mt-goods,
 .mt-superior,
-.mt-we-more {
+.mt-we-more,
+.mt-regarding {
   background: #f7f8fa;
   padding-top: 27px;
   margin-top: 30px;
@@ -1001,6 +1069,10 @@ a {
   height: 36px;
 }
 
+.mt-distribution,.mt-also {
+  margin-top: 30px;
+}
+
 .mt-distribution-cont {
   display: flex;
   align-items: center;
@@ -1062,7 +1134,7 @@ a {
 }
 
 .mt-phone-table-item {
-  width: 62px;
+  width: 60px;
   height: 69px;
   border: 1px solid #DCDCDC;
   font-size: 7px;
@@ -1086,4 +1158,100 @@ a {
   width: 40px;
   height: 40px;
   margin-top: 8px;
+}
+
+.mt-we-more a div {
+  width: 75px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  line-height: 25px;
+  text-align: center;
+  margin: 18px auto 0;
+  color: #fff;
+}
+
+.mt-also-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mt-also-cont a {
+  width: 30%;
+  display: inline-block;
+}
+
+.mt-also-item {
+  padding: 10px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 8px;
+  border: 1px solid #dcdcdc;
+  min-height: 177px;
+}
+
+.mt-also-title {
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.mt-also-title>img {
+  width: 100%;
+  height: 100%;
+}
+
+.mt-also-test div {
+  font-size: 9px;
+  color: #ff7e44;
+  margin: 10px 0 5px;
+}
+
+.mt-also-test p {
+  font-size: 7px;
+}
+
+.mt-regarding {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 9px;
+}
+
+.mt-regarding>img {
+  width: 150px;
+  display: block;
+  margin: 0 auto 0;
+}
+
+.mt-regarding>div {
+  font-size: 10px;
+  text-align: center;
+}
+
+.mt-regarding>ul {
+  margin: 10px auto 0;
+  width: 250px;
+}
+
+.mt-regarding>ul li {
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+  margin-bottom: 4px;
+}
+
+.mt-regarding>ul li img {
+  width: 12px;
+  margin-right: 6px;
+}
+
+.mt-phone-case {
+  margin-top: 30px;
+}
+
+.mt-phone-swiper-list {
+  width: 100%;
+  overflow: hidden;
 }

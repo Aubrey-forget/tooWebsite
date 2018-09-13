@@ -18,15 +18,30 @@ ZoomPic.prototype = {
     this._doNext = function() {
       return _this.doNext.apply(_this);
     };
-    this.options = [
-      { width: 222, height: 394, top: 208, left: 0, zIndex: 1 },
-      { width: 222, height: 394, top: 208, left: 0, zIndex: 2 },
-      { width: 265, height: 474, top: 168, left: 242, zIndex: 3 },
-      { width: 303, height: 539, top: 51, left: 537, zIndex: 4 },
-      { width: 265, height: 474, top: 168, left: 901, zIndex: 3 },
-      { width: 222, height: 394, top: 208, left: 1206, zIndex: 2 },
-      { width: 222, height: 394, top: 208, left: 1206, zIndex: 1 }
-    ];
+
+    if (isMobile.phone) {
+      console.log('手机');
+      this.options = [
+        { width: 111, height: 197, top: 104, left: 5, zIndex: 1 },
+        { width: 111, height: 197, top: 104, left: 5, zIndex: 2 },
+        { width: 132, height: 237, top: 84, left: 40, zIndex: 3 },
+        { width: 151, height: 269, top: 26, left: 100, zIndex: 4 },
+        { width: 132, height: 237, top: 84, left: 200, zIndex: 3 },
+        { width: 111, height: 197, top: 104, left: 260, zIndex: 2 },
+        { width: 111, height: 197, top: 104, left: 270, zIndex: 1 }
+      ];
+    } else {
+      console.log('web');
+      this.options = [
+        { width: 222, height: 394, top: 208, left: 0, zIndex: 1 },
+        { width: 222, height: 394, top: 208, left: 0, zIndex: 2 },
+        { width: 265, height: 474, top: 168, left: 242, zIndex: 3 },
+        { width: 303, height: 539, top: 51, left: 537, zIndex: 4 },
+        { width: 265, height: 474, top: 168, left: 901, zIndex: 3 },
+        { width: 222, height: 394, top: 208, left: 1206, zIndex: 2 },
+        { width: 222, height: 394, top: 208, left: 1206, zIndex: 1 }
+      ];
+    }
     for (var i = 0; i < this.aLi.length; i++) this.aSort[i] = this.aLi[i];
     this.aSort.unshift(this.aSort.pop());
     this.setUp();
