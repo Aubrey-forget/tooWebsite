@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
   <meta http-equiv="X-UA-Compatible"
         content="ie=edge">
   <title>Document</title>
@@ -14,18 +14,579 @@
   <script src="./js/jqurey.min.3.3.1.js"></script>
   <script src="./js/swiper.js"></script>
   <script src="./js/template.js"></script>
-
-  <!-- 渲染页面之前判断是否是手机端 -->
-  <script>
-    if (isMobile.phone) {
-    console.log('手机');
-  } else {
-    console.log('web');
-  }
-  </script>
 </head>
 
 <body>
+  <!-- 手机端 -->
+  <section id="mt-phone">
+    <header class="mt-phone-header">
+      <img src="./img/banner-phone.png"
+           alt="">
+      <a href="https://market.cloud.tencent.com/stores/1253714409"
+         target="_blank">
+        <div>立即拥有</div>
+      </a>
+    </header>
+
+    <!-- 行业痛点 -->
+    <section class="mt-phone-industry">
+      <header>
+        <h3>行业痛点</h3>
+        <p>痛定思痛，着力解决</p>
+      </header>
+      <section class="mt-phone-industry-content">
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-phone-content-item">
+            <div>
+              <img src="./img/industry/1.png"
+                   alt="">
+            </div>
+            <figcaption>传统的线下流量往往不可被记录，难以进行统计</figcaption>
+          </figure>
+        </a>
+
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-phone-content-item">
+            <div>
+              <img src="./img/industry/2.png"
+                   alt="">
+            </div>
+            <figcaption>线下商铺与客户的链接随着客户离店而断开，不能做持续维护</figcaption>
+          </figure>
+        </a>
+
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-phone-content-item">
+            <div>
+              <img src="./img/industry/3.png"
+                   alt="">
+            </div>
+            <figcaption>日渐增长的平台服务费及抽成，使得成本逐年增高</figcaption>
+          </figure>
+        </a>
+
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-phone-content-item">
+            <div>
+              <img src="./img/industry/4.png"
+                   alt="">
+            </div>
+            <figcaption>营销手段受平台限制极大，缺乏自主性</figcaption>
+          </figure>
+        </a>
+
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-phone-content-item">
+            <div>
+              <img src="./img/industry/5.png"
+                   alt="">
+            </div>
+            <figcaption>竞价模式下高额的流量获客成本，使得利润越来越薄</figcaption>
+          </figure>
+        </a>
+
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-phone-content-item">
+            <div>
+              <img src="./img/industry/6.png"
+                   alt="">
+            </div>
+            <figcaption>使用外卖平台的顾客，通常很容易因为价格而被其他同类店铺信息吸引走，客户忠诚度不高</figcaption>
+          </figure>
+        </a>
+
+      </section>
+    </section>
+
+    <!-- 凸赞优势 -->
+    <section class="mt-phone-odds">
+      <header>
+        <h3>行业痛点</h3>
+        <p>痛定思痛，着力解决</p>
+      </header>
+      <a href="https://market.cloud.tencent.com/stores/1253714409"
+         target="_blank">
+        <figure class="mt-odds-item">
+          <div>
+            <img src="./img/superiority/operation.png"
+                 alt="">
+          </div>
+          <figcaption>
+            <h3>运营支持</h3>
+            <p>全套小程序运营方案，资深运营大咖手把手指导，让您买的值，用的更值。</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://market.cloud.tencent.com/stores/1253714409"
+         target="_blank">
+        <figure class="mt-odds-item">
+          <div>
+            <img src="./img/superiority/deploy.png"
+                 alt="">
+          </div>
+          <figcaption>
+            <h3>一键部署</h3>
+            <p>一键授权，轻松上线，用凸赞小程序就是这么简单，还有美女客服一对一指导哦。</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://market.cloud.tencent.com/stores/1253714409"
+         target="_blank">
+        <figure class="mt-odds-item">
+          <div>
+            <img src="./img/superiority/maintain.png"
+                 alt="">
+          </div>
+          <figcaption>
+            <h3>持续维护</h3>
+            <p>持续不断的产品升级，从页面UI到产品功能迭代，周周给您小惊喜，月月给您大惊喜。</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://market.cloud.tencent.com/stores/1253714409"
+         target="_blank">
+        <figure class="mt-odds-item">
+          <div>
+            <img src="./img/superiority/maintain.png"
+                 alt="">
+          </div>
+          <figcaption>
+            <h3>精美模板</h3>
+            <p>丰富漂亮的界面模版，总有一款适合你，而且还支持根据客户企业VI深度定制哦。</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://market.cloud.tencent.com/stores/1253714409"
+         target="_blank">
+        <figure class="mt-odds-item">
+          <div>
+            <img src="./img/superiority/plowing.png"
+                 alt="">
+          </div>
+          <figcaption>
+            <h3>垂直深耕</h3>
+            <p>不仅是小程序，更是适合您所在行业的深度定制的行业解决方案，直达行业痛点。</p>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="https://market.cloud.tencent.com/stores/1253714409"
+         target="_blank">
+        <figure class="mt-odds-item">
+          <div>
+            <img src="./img/superiority/price.png"
+                 alt="">
+          </div>
+          <figcaption>
+            <h3>价格公道</h3>
+            <p>全网支持持续维护服务的小程序最具性价比服务商，一次给钱，持久售后。</p>
+          </figcaption>
+        </figure>
+      </a>
+    </section>
+
+    <!-- 功能模块 -->
+    <section class="mt-phone-fun">
+      <header>
+        <h3>功能板块</h3>
+        <p>大小企业，都要有自己的品牌</p>
+      </header>
+
+      <div class="mt-fun-title">
+        <div class="mt-active">小型商铺-基础功能</div>
+        <div>连锁企业-适配功能</div>
+      </div>
+
+      <section class="mt-fun-content">
+
+        <!-- 外卖 -->
+        <div class="mt-fun-left"
+             style="display:none;">
+          <img src="./img/fun/food.png"
+               alt="">
+          <div class="mt-foot">
+            <h3>面向餐饮行业</h3>
+            <p>打造一站式消费群体流量蓄能</p>
+            <ul>
+              <li>
+                <span></span>
+                <p>覆盖手机、电脑、收银机的全端管理后台</p>
+              </li>
+
+              <li>
+                <span></span>
+                <p>对接10家主流即时配送公司的智能派单系统</p>
+              </li>
+
+              <li>
+                <span></span>
+                <p>堂食、外卖、买单一应俱全</p>
+              </li>
+
+              <li>
+                <span></span>
+                <p>红包裂变、优惠券、满减等各种营销工具</p>
+              </li>
+            </ul>
+            <a href="https://market.cloud.tencent.com/products/3223#"
+               target="_blank">
+              <div>立即使用</div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 连锁店 -->
+        <div class="mt-fun-right">
+          <img src="./img/fun/chain.png"
+               alt="">
+          <div class="mt-chain">
+            <h3>新电商渠道</h3>
+            <p>逐步摆脱平台制约</p>
+            <ul>
+              <li>
+                <p>自动结算系统，解决财务困扰</p>
+                <span></span>
+              </li>
+              <li>
+                <p>分店共享菜品信息，商品上架无忧</p>
+                <span></span>
+              </li>
+              <li>
+                <p>阶梯运费设置，灵活配送</p>
+                <span></span>
+              </li>
+              <li>
+                <p>会员系统，助力品牌营销</p>
+                <span></span>
+              </li>
+            </ul>
+            <a href="https://market.cloud.tencent.com/products/3223#"
+               target="_blank">
+              <div>立即使用</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- 产品一体化 -->
+    <section class="mt-goods">
+      <header>
+        <h3>产品一体化</h3>
+        <p>帮助商家打通“点餐-支付-出票-配送-反馈”各个环节，实现一体化的营销管理</p>
+      </header>
+
+      <section>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-goods-item">
+            <div>
+              <img src="./img/product/scanCode.png"
+                   alt="">
+            </div>
+            <figcaption>堂食点餐</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-goods-item">
+            <div>
+              <img src="./img/product/wallet.png"
+                   alt="">
+            </div>
+            <figcaption>买单支付</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-goods-item">
+            <div>
+              <img src="./img/product/orders.png"
+                   alt="">
+            </div>
+            <figcaption>APP一键接单</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-goods-item">
+            <div>
+              <img src="./img/product/print.png"
+                   alt="">
+            </div>
+            <figcaption>云打印</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-goods-item">
+            <div>
+              <img src="./img/product/takeaway.png"
+                   alt="">
+            </div>
+            <figcaption>外卖配送</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-goods-item">
+            <div>
+              <img src="./img/product/management.png"
+                   alt="">
+            </div>
+            <figcaption>PC端管理后台</figcaption>
+          </figure>
+        </a>
+      </section>
+    </section>
+
+
+    <!-- 外卖配送 -->
+    <section class="mt-distribution">
+      <header>
+        <h3>外卖配送</h3>
+        <p>配送物力覆盖全国300多个城市</p>
+      </header>
+
+      <div class="mt-distribution-cont">
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-distribution-item">
+            <h3>更便宜</h3>
+            <p>叮叮配送系统会根据配送订单距离，自动匹配配送公司，首选更便宜的配送公司。​</p>
+          </div>
+        </a>
+
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-distribution-item"
+               style="margin:0 4px;">
+            <h3>更快</h3>
+            <p>叮叮配送系统会匹配最近的配送骑手，不区分配送公司，骑手接单后即显示骑手的实时位置信息及配送价格。</p>
+          </div>
+        </a>
+
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-distribution-item">
+            <h3>智能推荐</h3>
+            <p>大数据计算各个城市区域配送物力情况，根据配送的公司不同，距离不同，价格不同智能推荐。</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 运营优势 -->
+    <section class="mt-superior">
+      <header>
+        <h3>运营优势</h3>
+        <p>凸赞能做到</p>
+      </header>
+      <div class="mt-superior-cont">
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-superior-item">
+            <img src="./img/operation/yunyingyoushi-1.png"
+                 alt="">
+            <p style="margin-bottom:4px">样式排版</p>
+            <p>免费更新</p>
+          </div>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-superior-item"
+               style="margin:0 10px;">
+            <img src="./img/operation/yunyingyoushi-2.png"
+                 alt="">
+            <p style="margin-bottom:4px">功能更新</p>
+            <p>免费升级</p>
+          </div>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-superior-item">
+            <img src="./img/operation/yunyingyoushi-3.png"
+                 alt="">
+            <p style="margin-bottom:4px">配送状况</p>
+            <p>实时监控</p>
+          </div>
+        </a>
+      </div>
+
+
+
+
+    </section>
+
+    <!-- 真实案例 -->
+
+    <!-- 我们有的不止这些 -->
+    <section class="mt-we-more">
+      <header>
+        <h3 style="color:#fff;">我们有的不止这些</h3>
+        <p>凸赞小程序 助成大生意</p>
+      </header>
+
+      <div class="mt-phone-table">
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/KTV.png"
+                 alt="">
+          </div>
+          <figcaption>KTV</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/2.png"
+                 alt="">
+          </div>
+          <figcaption>超市</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/3.png"
+                 alt="">
+          </div>
+          <figcaption>生鲜</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/4.png"
+                 alt="">
+          </div>
+          <figcaption>酒水</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/5.png"
+                 alt="">
+          </div>
+          <figcaption>外卖</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/6.png"
+                 alt="">
+          </div>
+          <figcaption>新零售</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/7.png"
+                 alt="">
+          </div>
+          <figcaption>鲜花</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/8.png"
+                 alt="">
+          </div>
+          <figcaption>母婴</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/9.png"
+                 alt="">
+          </div>
+          <figcaption>美妆</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/10.png"
+                 alt="">
+          </div>
+          <figcaption>洪培</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/11.png"
+                 alt="">
+          </div>
+          <figcaption>服装</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item">
+          <div>
+            <img src="./img/viewMore/12.png"
+                 alt="">
+          </div>
+          <figcaption>医疗</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item mt-last">
+          <div>
+            <img src="./img/viewMore/13.png"
+                 alt="">
+          </div>
+          <figcaption>教育</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item mt-last">
+          <div>
+            <img src="./img/viewMore/14.png"
+                 alt="">
+          </div>
+          <figcaption>社区</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item mt-last">
+          <div>
+            <img src="./img/viewMore/15.png"
+                 alt="">
+          </div>
+          <figcaption>家居</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item mt-last">
+          <div>
+            <img src="./img/viewMore/16.png"
+                 alt="">
+          </div>
+          <figcaption>家政</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item mt-last">
+          <div>
+            <img src="./img/viewMore/17.png"
+                 alt="">
+          </div>
+          <figcaption>旅游</figcaption>
+        </figure>
+        <figure class="mt-phone-table-item mt-last">
+          <div>
+            <img src="./img/viewMore/18.png"
+                 alt="">
+          </div>
+          <figcaption>酒店</figcaption>
+        </figure>
+      </div>
+
+      <a href="" target="_blank">
+        <div>前往使用</div>
+      </a>
+
+
+    </section>
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+
+  <!-- web端 -->
   <section id="mt-too-web">
     <header class="mt-too-header">
       <img src="./img/banner.png"
@@ -45,67 +606,81 @@
 
       <section class="mt-industry">
 
-        <figure class="mt-too-figure">
-          <div>
-            <img src="./img/industry/1.png"
-                 alt="">
-          </div>
-          <figcaption>
-            传统的线下流量往往不可被记录，难以进行统计
-          </figcaption>
-        </figure>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-too-figure">
+            <div>
+              <img src="./img/industry/1.png"
+                   alt="">
+            </div>
+            <figcaption>
+              传统的线下流量往往不可被记录，难以进行统计
+            </figcaption>
+          </figure>
+        </a>
 
-        <figure class="mt-too-figure">
-          <div>
-            <img src="./img/industry/2.png"
-                 alt="">
-          </div>
-          <figcaption>
-            线下商铺与客户的链接随着客户离店而断开，不能做持续维护
-          </figcaption>
-        </figure>
-
-        <figure class="mt-too-figure">
-          <div>
-            <img src="./img/industry/3.png"
-                 alt="">
-          </div>
-          <figcaption>
-            竞价模式下高额的流量获客成本，使得利润越来越薄
-          </figcaption>
-        </figure>
-
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-too-figure">
+            <div>
+              <img src="./img/industry/2.png"
+                   alt="">
+            </div>
+            <figcaption>
+              线下商铺与客户的链接随着客户离店而断开，不能做持续维护
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-too-figure">
+            <div>
+              <img src="./img/industry/3.png"
+                   alt="">
+            </div>
+            <figcaption>
+              竞价模式下高额的流量获客成本，使得利润越来越薄
+            </figcaption>
+          </figure>
+        </a>
       </section>
       <section class="mt-industry">
-        <figure class="mt-too-figure">
-          <div>
-            <img src="./img/industry/4.png"
-                 alt="">
-          </div>
-          <figcaption>
-            日渐增长的平台服务费及抽成，使得成本逐年增高
-          </figcaption>
-        </figure>
-
-        <figure class="mt-too-figure">
-          <div>
-            <img src="./img/industry/5.png"
-                 alt="">
-          </div>
-          <figcaption>
-            营销手段受平台限制极大，缺乏自主性
-          </figcaption>
-        </figure>
-
-        <figure class="mt-too-figure">
-          <div>
-            <img src="./img/industry/6.png"
-                 alt="">
-          </div>
-          <figcaption>
-            使用外卖平台的顾客，通常很容易因为价格而被其他同类店铺信息吸引走，客户忠诚度不高
-          </figcaption>
-        </figure>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-too-figure">
+            <div>
+              <img src="./img/industry/4.png"
+                   alt="">
+            </div>
+            <figcaption>
+              日渐增长的平台服务费及抽成，使得成本逐年增高
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-too-figure">
+            <div>
+              <img src="./img/industry/5.png"
+                   alt="">
+            </div>
+            <figcaption>
+              营销手段受平台限制极大，缺乏自主性
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-too-figure">
+            <div>
+              <img src="./img/industry/6.png"
+                   alt="">
+            </div>
+            <figcaption>
+              使用外卖平台的顾客，通常很容易因为价格而被其他同类店铺信息吸引走，客户忠诚度不高
+            </figcaption>
+          </figure>
+        </a>
       </section>
     </section>
 
@@ -116,75 +691,91 @@
         <p>业内一致好评的小程序行家</p>
       </header>
       <div class="mt-superiority-row">
-        <figure class="mt-superiority-item">
-          <div>
-            <img src="./img/superiority/operation.png"
-                 alt="">
-          </div>
-          <figcaption>
-            <h4>运营支持</h4>
-            <p>全套小程序运营方案，资深运营大咖手把手指导，让您买的值，用的更值。</p>
-          </figcaption>
-        </figure>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-superiority-item">
+            <div>
+              <img src="./img/superiority/operation.png"
+                   alt="">
+            </div>
+            <figcaption>
+              <h4>运营支持</h4>
+              <p>全套小程序运营方案，资深运营大咖手把手指导，让您买的值，用的更值。</p>
+            </figcaption>
+          </figure>
+        </a>
 
-        <figure class="mt-superiority-item">
-          <div>
-            <img src="./img/superiority/deploy.png"
-                 alt="">
-          </div>
-          <figcaption>
-            <h4>一键部署</h4>
-            <p>一键授权，轻松上线，用凸赞小程序就是这么简单，还有美女客服一对一指导哦。</p>
-          </figcaption>
-        </figure>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-superiority-item">
+            <div>
+              <img src="./img/superiority/deploy.png"
+                   alt="">
+            </div>
+            <figcaption>
+              <h4>一键部署</h4>
+              <p>一键授权，轻松上线，用凸赞小程序就是这么简单，还有美女客服一对一指导哦。</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
 
       <div class="mt-superiority-row">
-        <figure class="mt-superiority-item">
-          <div>
-            <img src="./img/superiority/maintain.png"
-                 alt="">
-          </div>
-          <figcaption>
-            <h4>持续维护</h4>
-            <p>持续不断的产品升级，从页面UI到产品功能迭代，周周给您小惊喜，月月给您大惊喜。</p>
-          </figcaption>
-        </figure>
-
-        <figure class="mt-superiority-item">
-          <div>
-            <img src="./img/superiority/stencil.png"
-                 alt="">
-          </div>
-          <figcaption>
-            <h4>精美模板</h4>
-            <p>丰富漂亮的界面模版，总有一款适合你，而且还支持根据客户企业VI深度定制哦。</p>
-          </figcaption>
-        </figure>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-superiority-item">
+            <div>
+              <img src="./img/superiority/maintain.png"
+                   alt="">
+            </div>
+            <figcaption>
+              <h4>持续维护</h4>
+              <p>持续不断的产品升级，从页面UI到产品功能迭代，周周给您小惊喜，月月给您大惊喜。</p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-superiority-item">
+            <div>
+              <img src="./img/superiority/stencil.png"
+                   alt="">
+            </div>
+            <figcaption>
+              <h4>精美模板</h4>
+              <p>丰富漂亮的界面模版，总有一款适合你，而且还支持根据客户企业VI深度定制哦。</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
 
       <div class="mt-superiority-row">
-        <figure class="mt-superiority-item">
-          <div>
-            <img src="./img/superiority/plowing.png"
-                 alt="">
-          </div>
-          <figcaption>
-            <h4>垂直深耕 </h4>
-            <p>不仅是小程序，更是适合您所在行业的深度定制的行业解决方案，直达行业痛点。</p>
-          </figcaption>
-        </figure>
-
-        <figure class="mt-superiority-item">
-          <div>
-            <img src="./img/superiority/price.png"
-                 alt="">
-          </div>
-          <figcaption>
-            <h4>价格公道 </h4>
-            <p>全网支持持续维护服务的小程序最具性价比服务商，一次给钱，持久售后。</p>
-          </figcaption>
-        </figure>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-superiority-item">
+            <div>
+              <img src="./img/superiority/plowing.png"
+                   alt="">
+            </div>
+            <figcaption>
+              <h4>垂直深耕 </h4>
+              <p>不仅是小程序，更是适合您所在行业的深度定制的行业解决方案，直达行业痛点。</p>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-superiority-item">
+            <div>
+              <img src="./img/superiority/price.png"
+                   alt="">
+            </div>
+            <figcaption>
+              <h4>价格公道 </h4>
+              <p>全网支持持续维护服务的小程序最具性价比服务商，一次给钱，持久售后。</p>
+            </figcaption>
+          </figure>
+        </a>
       </div>
     </section>
 
@@ -294,49 +885,66 @@
       </header>
 
       <div class="mt-product">
-        <figure class="mt-product-item">
-          <div>
-            <img src="./img/product/scanCode.png"
-                 alt="">
-          </div>
-          <figcaption>堂食点餐</figcaption>
-        </figure>
-
-        <figure class="mt-product-item">
-          <div>
-            <img src="./img/product/wallet.png"
-                 alt="">
-          </div>
-          <figcaption>买单支付</figcaption>
-        </figure>
-        <figure class="mt-product-item">
-          <div>
-            <img src="./img/product/orders.png"
-                 alt="">
-          </div>
-          <figcaption>APP一键接单</figcaption>
-        </figure>
-        <figure class="mt-product-item">
-          <div>
-            <img src="./img/product/print.png"
-                 alt="">
-          </div>
-          <figcaption>云打印</figcaption>
-        </figure>
-        <figure class="mt-product-item">
-          <div>
-            <img src="./img/product/takeaway.png"
-                 alt="">
-          </div>
-          <figcaption>外卖配送</figcaption>
-        </figure>
-        <figure class="mt-product-item">
-          <div>
-            <img src="./img/product/management.png"
-                 alt="">
-          </div>
-          <figcaption>PC端管理后台</figcaption>
-        </figure>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-product-item">
+            <div>
+              <img src="./img/product/scanCode.png"
+                   alt="">
+            </div>
+            <figcaption>堂食点餐</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-product-item">
+            <div>
+              <img src="./img/product/wallet.png"
+                   alt="">
+            </div>
+            <figcaption>买单支付</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-product-item">
+            <div>
+              <img src="./img/product/orders.png"
+                   alt="">
+            </div>
+            <figcaption>APP一键接单</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-product-item">
+            <div>
+              <img src="./img/product/print.png"
+                   alt="">
+            </div>
+            <figcaption>云打印</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-product-item">
+            <div>
+              <img src="./img/product/takeaway.png"
+                   alt="">
+            </div>
+            <figcaption>外卖配送</figcaption>
+          </figure>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <figure class="mt-product-item">
+            <div>
+              <img src="./img/product/management.png"
+                   alt="">
+            </div>
+            <figcaption>PC端管理后台</figcaption>
+          </figure>
+        </a>
       </div>
     </section>
 
@@ -347,18 +955,27 @@
         <p>配送物力覆盖全国300多个城市</p>
       </header>
       <div class="mt-takeaway-box">
-        <div class="mt-takeaway-item">
-          <h3>更便宜</h3>
-          <p>叮叮配送系统会根据配送订单距离，自动匹配配送公司，首选更便宜的配送公司。​</p>
-        </div>
-        <div class="mt-takeaway-item">
-          <h3>更快</h3>
-          <p>叮叮配送系统会匹配最近的配送骑手，不区分配送公司，骑手接单后即显示骑手的实时位置信息及配送价格。</p>
-        </div>
-        <div class="mt-takeaway-item">
-          <h3>智能推荐</h3>
-          <p>大数据计算各个城市区域配送物力情况，根据配送的公司不同，距离不同，价格不同智能推荐。</p>
-        </div>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-takeaway-item">
+            <h3>更便宜</h3>
+            <p>叮叮配送系统会根据配送订单距离，自动匹配配送公司，首选更便宜的配送公司。​</p>
+          </div>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-takeaway-item">
+            <h3>更快</h3>
+            <p>叮叮配送系统会匹配最近的配送骑手，不区分配送公司，骑手接单后即显示骑手的实时位置信息及配送价格。</p>
+          </div>
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-takeaway-item">
+            <h3>智能推荐</h3>
+            <p>大数据计算各个城市区域配送物力情况，根据配送的公司不同，距离不同，价格不同智能推荐。</p>
+          </div>
+        </a>
       </div>
 
 
@@ -371,30 +988,39 @@
         <p>凸赞能做到</p>
       </header>
       <section class="mt-operation-box">
-        <div class="mt-operation-item">
-          <div>
-            <img src="./img/operation/yunyingyoushi-1.png"
-                 alt="">
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-operation-item">
+            <div>
+              <img src="./img/operation/yunyingyoushi-1.png"
+                   alt="">
+            </div>
+            <p style="margin-bottom:10px">样式排版</p>
+            <p>免费更新</p>
           </div>
-          <p style="margin-bottom:10px">样式排版</p>
-          <p>免费更新</p>
-        </div>
-        <div class="mt-operation-item">
-          <div>
-            <img src="./img/operation/yunyingyoushi-2.png"
-                 alt="">
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-operation-item">
+            <div>
+              <img src="./img/operation/yunyingyoushi-2.png"
+                   alt="">
+            </div>
+            <p style="margin-bottom:10px">功能更新</p>
+            <p>免费升级</p>
           </div>
-          <p style="margin-bottom:10px">功能更新</p>
-          <p>免费升级</p>
-        </div>
-        <div class="mt-operation-item">
-          <div>
-            <img src="./img/operation/yunyingyoushi-3.png"
-                 alt="">
+        </a>
+        <a href="https://market.cloud.tencent.com/stores/1253714409"
+           target="_blank">
+          <div class="mt-operation-item">
+            <div>
+              <img src="./img/operation/yunyingyoushi-3.png"
+                   alt="">
+            </div>
+            <p style="margin-bottom:10px">配送状态</p>
+            <p>实时监控</p>
           </div>
-          <p style="margin-bottom:10px">配送状态</p>
-          <p>实时监控</p>
-        </div>
+        </a>
       </section>
     </section>
 
@@ -615,7 +1241,6 @@
       </div>
     </section>
   </section>
-
 </body>
 <!-- 我们有的不止这些 -->
 <script id="mt-moreList-box"
@@ -632,6 +1257,17 @@
 </script>
 
 <script>
+    if (isMobile.phone) {
+    console.log('手机');
+    $('#mt-phone').css({"display":"block"});
+    $('#mt-too-web').css({"display":"none"});
+
+  } else {
+    console.log('web');
+    $('#mt-phone').css({"display":"none"});
+    $('#mt-too-web').css({"display":"block"});
+  }
+
   $(() => {
     new ZoomPic("mt-swiper");
   })
@@ -710,6 +1346,7 @@
   }
   const html = template.render($('#mt-moreList-box').html(), more);
   $('#mt-moreList').html(html);
+
 </script>
 
 </html>
